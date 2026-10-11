@@ -1,0 +1,280 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 13px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0056b3;
+    text-align: center;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #003d80;
+    border-radius: 4px;
+}
+
+/* Main Container */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* All Sections */
+section {
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section Headings */
+section h2 {
+    color: #222;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+
+/* Horizontal Separator */
+hr {
+    border: none;
+    border-top: 2px solid #cccccc;
+    margin: 0;
+}
+
+/* About Me */
+#about {
+    text-align: center;
+    padding: 15px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#about img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#about p {
+    text-align: center;
+    font-size: 12px;
+    margin: 8px auto;
+}
+
+/* My Skills */
+#skills {
+    text-align: center;
+    padding: 15px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Skills Table */
+#skills table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+#skills th,
+#skills td {
+    border: 1px solid #0056b3;
+    padding: 6px;
+    text-align: center;
+}
+
+#skills th {
+    background-color: #0056b3;
+    color: white;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+/* My Projects */
+#projects {
+    text-align: center;
+    padding: 15px;
+}
+
+.project-card {
+    background-color: white;
+    width: 50%;
+    margin: 12px auto;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 12px;
+}
+
+/* Contact Me */
+#Contact {
+    text-align: center;
+    padding: 15px;
+}
+
+#Contact h2 {
+    text-align: center;
+}
+
+/* Contact Form */
+#Contact form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#Contact table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+#Contact th,
+#Contact td {
+    border: 1px solid #0056b3;
+    padding: 6px;
+    text-align: center;
+}
+
+#Contact input,
+#Contact textarea {
+    width: 95%;
+    padding: 7px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+#Contact textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    #skills table,
+    .project-card,
+    #Contact form {
+        width: 90%;
+    }
+
+    nav a {
+        padding: 6px 8px;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+}
